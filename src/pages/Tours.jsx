@@ -52,7 +52,7 @@ const Tours = () => {
 
             <button
                 onClick={() => navigate("/")}
-                className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-700 transition"
+                className="fixed bottom-5 left-5  mt-4 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-700 transition"
             >
                 Назад
             </button>

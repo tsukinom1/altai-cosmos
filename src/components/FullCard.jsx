@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import {useNavigate, useParams} from "react-router-dom";
 import {FaWhatsapp} from "react-icons/fa";
 import FullCardPart from "./FullCardPart";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -10,6 +10,7 @@ import Conditions from "./Conditions.jsx";
 import {useState} from "react";
 
 const FullCard = () => {
+    const navigate = useNavigate();
     const { id } = useParams();
     const tour = tours.find((t) => t.id === parseInt(id));
     const [selectedImage, setSelectedImage] = useState(null);
@@ -27,7 +28,7 @@ const FullCard = () => {
                 alt={tour.title}
                 className="hover:scale-105 transition-transform duration-500  w-full h-64 object-cover rounded-md mb-4"
             />
-            <p className="text-lg mb-4">{tour.fullDescription}</p>
+            <p className="text-md md:text-lg mb-4">{tour.fullDescription}</p>
 
             {/* Маршрут */}
             <h2 className="text-2xl font-semibold mt-6">Маршрут:</h2>
@@ -44,8 +45,16 @@ const FullCard = () => {
             туры: </b>{tour.group === 'yes' ? `Можно выбрать экскурсию в группе или заказать индивидуальный тур.`
             : `Индивидуальные туры: Можно выбрать экскурсию только для индивидуальный тура.`}</p>
             <p className="text-sm md:text-lg mb-2"><b>Цена за тур: </b> {tour.price}</p>
-            <button type="button" className="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-3 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
-                <a href="https://wa.me/78128766436" className="flex gap-x-2"><FaWhatsapp size={20} />Записаться на тур</a>
+            <button type="button"
+                    className="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-3 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
+                <a href="https://wa.me/+79284590455" className="flex gap-x-2"><FaWhatsapp size={20}/>Записаться на
+                    тур</a>
+            </button>
+            <button
+                onClick={() => navigate("/")}
+                className="fixed bottom-5 left-5 z-100 mt-4 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-700 transition"
+            >
+                Назад
             </button>
 
             {/* Галерея */}
@@ -53,13 +62,13 @@ const FullCard = () => {
             <Swiper
                 modules={[Navigation, Pagination]}
                 navigation
-                pagination={{ clickable: true }}
+                pagination={{clickable: true}}
                 spaceBetween={10}
                 slidesPerView={2}
                 className="w-full mb-3"
                 breakpoints={{
-                    320: { slidesPerView: 1 },
-                    768: { slidesPerView: 2 },
+                    320: {slidesPerView: 1},
+                    768: {slidesPerView: 2},
                 }}
             >
                 {tour.gallery.map((img, index) => (
@@ -74,7 +83,8 @@ const FullCard = () => {
                 ))}
                 {selectedImage && (
                     <div className="fixed inset-0 bg-black flex justify-center items-center z-50">
-                        <img src={selectedImage} alt="Full view" onClick={() => setSelectedImage(null)} className="max-w-full max-h-full rounded-lg"/>
+                        <img src={selectedImage} alt="Full view" onClick={() => setSelectedImage(null)}
+                             className="max-w-full max-h-full rounded-lg"/>
                     </div>
                 )}
             </Swiper>

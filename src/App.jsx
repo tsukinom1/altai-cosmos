@@ -9,7 +9,7 @@ import PlaceCard from "./components/PlaceCard.jsx";
 function App() {
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/altai-cosmos/">
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/tours" element={<Tours />} />

@@ -8,8 +8,9 @@ export default function Header() {
         <div className="bg-gray-300">
             <div className="container mx-auto w-9/10 md:w-3/4 py-1 px-2 md:px-6 ">
                 <div className="flex items-center justify-between text-black">
-                    <Link to="/">
-                        <img src="/icons/logo.png" alt="logo" className="w-12 h-12"/>
+                    <Link to="/" className="flex items-center gap-2">
+                        <img src={`${import.meta.env.BASE_URL}/icons/logo.png`} alt="logo" className="w-12 h-12"/>
+                        <p className="font-bold text-md md:text-2xl font-serif">Altai Cosmos</p>
                     </Link>
                     <nav>
                         <section className="MOBILE-MENU flex lg:hidden">
