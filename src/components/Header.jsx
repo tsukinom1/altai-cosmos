@@ -10,7 +10,7 @@ export default function Header() {
                 <div className="flex items-center justify-between text-black">
                     <Link to="/" className="flex items-center gap-2">
                         <img src={`${import.meta.env.BASE_URL}/icons/logo.png`} alt="logo" className="w-12 h-12"/>
-                        <p className="font-bold text-md md:text-2xl font-serif">Altai Cosmos</p>
+                        <p className="font-bold text-md md:text-2xl font-serif">AltayCosmos</p>
                     </Link>
                     <nav>
                         <section className="MOBILE-MENU flex lg:hidden">

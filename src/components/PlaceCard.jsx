@@ -12,9 +12,10 @@ const PlaceCard = () => {
     }
 
     return (
-        <div className="container mx-auto w-9/10 md:w-3/4 p-2 md:p-6 bg-white shadow-lg rounded-lg">
+        <div data-aos="zoom-in" data-aos-duration="1000" className="container mx-auto w-9/10 md:w-3/4 p-2 md:p-6 bg-white shadow-lg rounded-lg">
             <h1 className="text-center text-lg md:text-3xl font-bold mb-4">{place.name}</h1>
-            <img src={place.img} alt={place.name} className="hover:scale-105 transition-transform duration-500 w-full h-64 object-cover rounded-md mb-4" />
+            <img src={place.img} alt={place.name}
+                 className="hover:scale-105 transition-transform duration-500 md:w-9/10 md:mx-auto md:max-h-120 object-center rounded-md mb-4" />
 
             <p className="text-md md:text-lg mb-4">{place.full}</p>
 

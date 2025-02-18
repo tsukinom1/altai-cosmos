@@ -9,7 +9,7 @@ const iconMap = {
 
 const Conditions = ({conditions}) => {
     return (
-        <div>
+        <div data-aos="zoom-in-out" data-aos-duration="1000">
             <h2 className="font-bold text-md md:text-lg">Условия поездки:</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-5">
                 {conditions.map((item, index) => {

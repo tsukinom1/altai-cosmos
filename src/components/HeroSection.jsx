@@ -5,15 +5,15 @@ const HeroSection = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
     const slides = [
         {
-            image: `${import.meta.env.BASE_URL}images/altai-1.jpg`,
+            image: `${import.meta.env.BASE_URL}images/altay-1.jpg`,
             text: "Откройте для себя величественные горы Алтая!",
         },
         {
-            image: `${import.meta.env.BASE_URL}images/altai-3.jpg`,
+            image: `${import.meta.env.BASE_URL}images/altay-3.jpg`,
             text: "Путешествуйте с комфортом и восхищением!",
         },
         {
-            image: `${import.meta.env.BASE_URL}images/altai-2.jpg`,
+            image: `${import.meta.env.BASE_URL}images/altay-2.jpg`,
             text: "Незабываемые приключения ждут вас!",
         },
     ];

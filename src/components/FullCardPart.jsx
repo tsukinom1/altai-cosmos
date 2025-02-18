@@ -5,18 +5,19 @@ const FullCardPart = ({place}) => {
 
     return (
         <>
-            <div className="bg-white shadow-md rounded-lg mb-6 flex flex-col md:flex-row gap-5 md:items-center">
+            <div data-aos="zoom-out" data-aos-duration="500"
+                className="bg-white shadow-md rounded-lg mb-6 flex flex-col md:flex-row gap-5 md:items-center">
                 <div className="sm:flex w-full gap-3 md:w-2/3">
                     <img
                         src={place.image}
                         alt={place.name}
-                        className="hover:scale-105 transition-transform duration-500  w-full my-3 sm:w-1/2 h-40  lg:h-60 object-cover rounded-lg cursor-pointer"
+                        className="hover:scale-105 transition-transform duration-500  w-full my-3 sm:w-1/2 h-80  lg:h-60 object-cover rounded-lg cursor-pointer"
                         onClick={() => setSelectedImage(place.image)}
                     />
                     <img
                         src={place.image2}
                         alt={place.name}
-                        className="hover:scale-105 transition-transform duration-500 w-full my-3 sm:w-1/2 h-40  lg:h-60 object-cover rounded-lg cursor-pointer"
+                        className="hover:scale-105 transition-transform duration-500 w-full my-3 sm:w-1/2 h-80  lg:h-60 object-cover rounded-lg cursor-pointer"
                         onClick={() => setSelectedImage(place.image2)}
                     />
                 </div>
