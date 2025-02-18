@@ -24,12 +24,6 @@ const Gallery = () => {
                         </li>
                     ))}
                 </ul>
-                <button
-                    onClick={() => navigate("/")}
-                    className="fixed bottom-5 left-5 mt-4 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-700 transition"
-                >
-                    Назад
-                </button>
                 {selectedImage && (
                     <div className="fixed inset-0 bg-black flex justify-center items-center z-50">
                         <img src={selectedImage} alt="Full view" onClick={() => setSelectedImage(null)}
@@ -38,6 +32,12 @@ const Gallery = () => {
                 )}
             </div>
 
+            <button
+                onClick={() => navigate("/")}
+                className="fixed bottom-5 left-5 mt-4 z-10 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-700 transition"
+            >
+                Назад
+            </button>
         </>
     );
 };
