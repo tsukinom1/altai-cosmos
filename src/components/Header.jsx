@@ -6,7 +6,7 @@ export default function Header() {
 
     return (
         <div className="bg-gray-300">
-            <div className="container mx-auto w-9/10 md:w-3/4 py-1 px-2 md:px-6 ">
+            <div className="container mx-auto w-9/10 md:w-3/4 py-3 px-2 md:px-6 ">
                 <div className="flex items-center justify-between text-black">
                     <Link to="/" className="flex items-center gap-2">
                         <img src={`${import.meta.env.BASE_URL}/icons/logo.png`} alt="logo" className="w-12 h-12"/>
@@ -48,9 +48,6 @@ export default function Header() {
                                     <li className="my-8 uppercase hover:text-cyan-600">
                                         <Link to="/gallery">Галерея</Link>
                                     </li>
-                                    <li className="my-8 uppercase hover:text-cyan-600">
-                                        <a href="#feedbacks">Отзывы</a>
-                                    </li>
                                 </ul>
                             </div>
                         </section>
@@ -61,9 +58,6 @@ export default function Header() {
                             </li>
                             <li className="my-8 uppercase hover:text-cyan-600">
                                 <Link to="/gallery">Галерея</Link>
-                            </li>
-                            <li className="my-8 uppercase hover:text-cyan-600">
-                                <a href="#feedbacks">Отзывы</a>
                             </li>
                         </ul>
                     </nav>

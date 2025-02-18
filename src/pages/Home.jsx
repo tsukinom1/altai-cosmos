@@ -10,6 +10,7 @@ import Guide from "../components/Guide.jsx";
 import GallerySwiper from "../components/GallerySwiper.jsx";
 import React from "react";
 import Alert from "../components/Alert.jsx";
+import ProductCard from "../components/ProductCard.jsx";
 
 
 const Home = () => {
@@ -38,8 +39,9 @@ const Home = () => {
                 </Link>
             </div>
             <Feedback feedbacks={feedbacks}/>
+            <ProductCard />
             <GallerySwiper/>
-            <FeedbackCard/>
+            <FeedbackCard id="feedbackCard"/>
         </div>
     );
 };

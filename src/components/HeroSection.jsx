@@ -5,15 +5,15 @@ const HeroSection = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
     const slides = [
         {
-            image: `${import.meta.env.BASE_URL}images/altay-1.jpg`,
+            image: `${import.meta.env.BASE_URL}images/bg-1.jpg`,
             text: "Откройте для себя величественные горы Алтая!",
         },
         {
-            image: `${import.meta.env.BASE_URL}images/altay-3.jpg`,
+            image: `${import.meta.env.BASE_URL}images/bg-3.jpg`,
             text: "Путешествуйте с комфортом и восхищением!",
         },
         {
-            image: `${import.meta.env.BASE_URL}images/altay-2.jpg`,
+            image: `${import.meta.env.BASE_URL}images/bg-2.jpg`,
             text: "Незабываемые приключения ждут вас!",
         },
     ];
@@ -27,7 +27,7 @@ const HeroSection = () => {
 
     return (
 
-        <div className="relative w-full h-[85vh]  overflow-hidden">
+        <div className="relative w-full h-[80vh]  overflow-hidden">
             <div className="container mx-auto w-9/10 md:w-3/4 p-6 pt-3">
                 {slides.map((slide, index) => (
                     <motion.div
@@ -35,7 +35,7 @@ const HeroSection = () => {
                         initial={{opacity: 0}}
                         animate={{opacity: index === currentSlide ? 1 : 0}}
                         transition={{duration: 1}}
-                        className="absolute inset-0 w-full h-full bg-cover bg-center"
+                        className="absolute inset-0 bg-cover"
                         style={{backgroundImage: `url(${slide.image})`}}
                     />
                 ))}

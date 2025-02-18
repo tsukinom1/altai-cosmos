@@ -1,17 +1,18 @@
-import {useNavigate, useParams} from "react-router-dom";
+import {useParams} from "react-router-dom";
 import {FaPhone, FaWhatsapp} from "react-icons/fa";
-import FullCardPart from "./FullCardPart";
+import FullCardPart from "../components/FullCardPart.jsx";
 import {Swiper, SwiperSlide} from "swiper/react";
 import {Autoplay, Navigation, Pagination} from "swiper/modules";
-import tours from "../utils/tours";
+import tours from "../utils/tours.js";
 import "swiper/css";
 import "swiper/css/navigation";
-import Conditions from "./Conditions.jsx";
+import Conditions from "../components/Conditions.jsx";
 import React, {useState} from "react";
-import Alert from "./Alert.jsx";
+import Alert from "../components/Alert.jsx";
+import Header from "../components/Header.jsx";
 
 const FullCard = () => {
-    const navigate = useNavigate();
+
     const {id} = useParams();
     const tour = tours.find((t) => t.id === parseInt(id));
     const [selectedImage, setSelectedImage] = useState(null);
@@ -23,6 +24,7 @@ const FullCard = () => {
 
     return (
         <>
+            <Header />
             <Alert text={tour.title} type="warning"/>
             <div data-aos="zoom-in" data-aos-duration="1000"
                  className="container mx-auto w-9/10 md:w-3/4 p-2 md:p-6 bg-white shadow-lg rounded-lg">
@@ -97,12 +99,6 @@ const FullCard = () => {
                     )}
                 </Swiper>
             </div>
-            <button
-                onClick={() => navigate("/")}
-                className="fixed bottom-5 left-5 mt-4 z-10 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-700 transition"
-            >
-                Назад
-            </button>
         </>
     );
 };

@@ -1,10 +1,10 @@
 import './App.css'
 import {BrowserRouter, Route, Routes, useLocation} from "react-router-dom";
 import Home from "./pages/Home.jsx";
-import FullCard from "./components/FullCard.jsx"
+import FullCard from "./pages/FullCard.jsx"
 import tours from "./utils/tours.js";
 import Tours from "./pages/Tours.jsx";
-import PlaceCard from "./components/PlaceCard.jsx";
+import PlaceCard from "./pages/PlaceCard.jsx";
 import Gallery from "./pages/Gallery.jsx";
 import {useEffect} from "react";
 import AOS from "aos";

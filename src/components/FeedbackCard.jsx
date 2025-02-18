@@ -2,11 +2,11 @@ import {FaWhatsapp, FaTelegram, FaPhone} from "react-icons/fa";
 import Alert from "./Alert.jsx";
 import React from "react";
 
-const FeedbackCard = () => {
+const FeedbackCard = ({id}) => {
     return (
         <>
             <Alert text="Что то не понятно?"/>
-            <div
+            <div id={id}
                 className="hover:animate-pulse hover:scale-105     container mx-auto w-9/10 md:w-3/4 p-2 md:p-6 shadow-lg rounded-lg">
                 <div className="w-full md:w-2/3 mx-auto text-center p-3">
                     <h2 className="text-md md:text-xl font-semibold mb-1">Свяжитесь с нами</h2>
