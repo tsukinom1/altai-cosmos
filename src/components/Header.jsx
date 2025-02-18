@@ -46,7 +46,7 @@ export default function Header() {
                                         <Link to="/tours">Туры</Link>
                                     </li>
                                     <li className="my-8 uppercase hover:text-cyan-600">
-                                        <a href="#gallery">Галерея</a>
+                                        <Link to="/gallery">Галерея</Link>
                                     </li>
                                     <li className="my-8 uppercase hover:text-cyan-600">
                                         <a href="#feedbacks">Отзывы</a>
@@ -60,7 +60,7 @@ export default function Header() {
                                 <Link to="/tours">Туры</Link>
                             </li>
                             <li className="my-8 uppercase hover:text-cyan-600">
-                                <a href="#gallery">Галерея</a>
+                                <Link to="/gallery">Галерея</Link>
                             </li>
                             <li className="my-8 uppercase hover:text-cyan-600">
                                 <a href="#feedbacks">Отзывы</a>
