@@ -67,7 +67,7 @@ const ProductCard = () => {
                                             <img
                                                 src={image}
                                                 alt={`Фото ${imgIndex + 1}`}
-                                                className="w-full sm:w-2/3 md:1/2 lg:w-300 mx-auto  hover:scale-105 transition-transform duration-300 h-120 sm:100 lg:h-120 object-center rounded-lg cursor-pointer"
+                                                className="w-full sm:w-2/3 md:1/2 lg:w-300 mx-auto  hover:scale-105 transition-transform duration-300 h-90 sm:100 lg:h-120 object-center rounded-lg cursor-pointer"
                                                 onClick={() =>
                                                     setSelectedImage(image)
                                                 }

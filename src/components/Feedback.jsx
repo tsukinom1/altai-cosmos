@@ -51,7 +51,7 @@ const Feedback = ({feedbacks}) => {
                                         <img
                                             src={image}
                                             alt={`Фото ${imgIndex + 1}`}
-                                            className="hover:scale-105 block mx-auto w-full sm:w-80 md:w-96 lg:w-[500px] h-auto object-cover rounded-lg"
+                                            className="hover:scale-105 block mx-auto w-full sm:w-80 md:w-96 lg:w-[500px] h-auto object-contain rounded-lg"
                                             onClick={() => setSelectedImage(image)}
                                         />
                                     </SwiperSlide>

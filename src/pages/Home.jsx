@@ -10,6 +10,7 @@ import GallerySwiper from "../components/GallerySwiper.jsx";
 import React from "react";
 import Alert from "../components/Alert.jsx";
 import ProductCard from "../components/ProductCard.jsx";
+import GuideCard from "../components/GuideCard.jsx";
 
 
 const Home = () => {
@@ -17,6 +18,14 @@ const Home = () => {
         <div className="">
             <Header/>
             <HeroSection/>
+            <GuideCard guide={{
+                photo1: `${import.meta.env.BASE_URL}images/guide-1.jpg`,
+                photo2: `${import.meta.env.BASE_URL}images/guide-2.jpg`,
+                name: "Алина",
+                description: "Индивидуальные туры Алтай.",
+                description2: "Незабываемые путешествия по живописным местам.",
+                description3: "Связаться со мной",
+            }}/>
             <Alert text="Популярные туры"/>
             <div className="container mx-auto w-9/10 md:w-3/4 p-2 my-3 md:p-6">
                 {tours.map((tour) => (
@@ -36,7 +45,7 @@ const Home = () => {
                 </Link>
             </div>
             <Feedback feedbacks={feedbacks}/>
-            <ProductCard />
+            <ProductCard/>
             <GallerySwiper/>
             <FeedbackCard id="feedbackCard"/>
         </div>
