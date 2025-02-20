@@ -14,7 +14,7 @@ const tours = [
                 {
                     name: "Тавдинские пещеры",
                     description: "Пещеры с древними наскальными рисунками.",
-                    image: [`'/tours/tavdin-cave.jpeg`,
+                    image: [`/tours/tavdin-cave.jpeg`,
                         `/tours/tavdin-cave-2.jpg`,
                     ]
                 },
