@@ -4,9 +4,9 @@ import Alert from "./Alert.jsx";
 
 const GuideCard = ({guide}) => {
     return (
-        <div>
+        <div >
             <Alert text="Коротко обо мне"/>
-            <div className="container mx-auto w-9/10 md:w-3/4 p-2 my-3 md:p-6">
+            <div data-aos="zoom-in" data-aos-duration="1000" className="container mx-auto w-9/10 md:w-3/4 p-2 my-3 md:p-6">
                 <div
                     className="bg-white shadow-lg rounded-2xl overflow-hidden flex flex-col lg:flex-row justify-center items-center gap-5">
                     <div className="w-1/1 lg:w-4/10">

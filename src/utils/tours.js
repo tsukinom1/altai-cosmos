@@ -14,8 +14,9 @@ const tours = [
                 {
                     name: "Тавдинские пещеры",
                     description: "Пещеры с древними наскальными рисунками.",
-                    image: `${import.meta.env.BASE_URL}tours/tavdin-cave.jpeg`,
-                    image2: `${import.meta.env.BASE_URL}tours/tavdin-cave-2.jpg`,
+                    image: [`${import.meta.env.BASE_URL}tours/tavdin-cave.jpeg`,
+                        `${import.meta.env.BASE_URL}tours/tavdin-cave-2.jpg`,
+                    ]
                 },
             ],
             conditions: [
@@ -56,15 +57,18 @@ const tours = [
                 {
                     name: "Манжерок гора Малая Синюха",
                     description: "Живописное место с канатной дорогой и панорамными видами.",
-                    image: `${import.meta.env.BASE_URL}tours/manzherok-canat-1.png`,
-                    image2: `${import.meta.env.BASE_URL}tours/manzherok-canat-2.png`,
+                    image: [`${import.meta.env.BASE_URL}tours/manzherok-canat-1.png`,
+                        `${import.meta.env.BASE_URL}tours/manzherok-canat-2.png`,
+                    ]
                 },
                 {
                     name: "Золотая баба",
                     description: "небольшая фигурка в духе тех, что изготавливали древнейшие народы как символы плодородия и здоровья",
-                    image: `${import.meta.env.BASE_URL}tours/golden-baba.jpg`,
-                    image2: `${import.meta.env.BASE_URL}tours/golden-baba-2.jpeg`,
-                },
+                    image: [
+                        `${import.meta.env.BASE_URL}tours/golden-baba.jpg`,
+                    ]
+                }
+                ,
             ],
             conditions: [
                 {
@@ -88,11 +92,12 @@ const tours = [
                     description: "Организатору до предоплаты"
                 }
             ],
-            gallery: [
-                `${import.meta.env.BASE_URL}tours/manzherok-canat-1.png`,
-                `${import.meta.env.BASE_URL}tours/manzherok-canat-2.png`,
-                `${import.meta.env.BASE_URL}tours/golden-baba.jpg`,
-            ]
+            gallery:
+                [
+                    `${import.meta.env.BASE_URL}tours/manzherok-canat-1.png`,
+                    `${import.meta.env.BASE_URL}tours/manzherok-canat-2.png`,
+                    `${import.meta.env.BASE_URL}tours/golden-baba.jpg`,
+                ]
         },
 
     ]
