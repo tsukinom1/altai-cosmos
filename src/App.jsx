@@ -16,7 +16,7 @@ function App() {
     }, []);
 
     return (
-        <BrowserRouter basename="/altai-cosmos/" scrollRestoration="manual">
+        <BrowserRouter scrollRestoration="manual">
             <ScrollToTop />
             <Routes>
                 <Route path="/" element={<Home/>}/>
