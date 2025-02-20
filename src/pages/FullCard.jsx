@@ -76,8 +76,8 @@ const FullCard = () => {
                         925: {slidesPerView: 2},
                     }}
                     autoplay={{
-                        delay: 5000,  // Время в миллисекундах между прокрутками (например, 3000 = 3 секунды)
-                        disableOnInteraction: false,  // Автопрокрутка не останавливается при взаимодействии с слайдером
+                        delay: 5000,
+                        disableOnInteraction: false,
                     }}
                 >
                     {tour.gallery.map((img, index) => (

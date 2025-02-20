@@ -4,7 +4,7 @@ const tours = [
             title: "Тавдинские пещеры",
             shortDescription: "Увлекательное путешествие по красивейшим местам Алтая.",
             fullDescription: "Этот тур познакомит вас с уникальными природными и историческими достопримечательностями Алтая. Вы увидите величественные Тавдинские пещеры, насладитесь потрясающим видом с канатной дороги Манжерока. Опытный гид расскажет вам удивительные истории и легенды этих мест.",
-            src: `${import.meta.env.BASE_URL}images/img-4.jpg`,
+            src: `/images/img-4.jpg`,
             price: "не указана",
             duration: "Нефиксированный",
             transfer: "Toyota Camry",
@@ -14,8 +14,8 @@ const tours = [
                 {
                     name: "Тавдинские пещеры",
                     description: "Пещеры с древними наскальными рисунками.",
-                    image: [`${import.meta.env.BASE_URL}tours/tavdin-cave.jpeg`,
-                        `${import.meta.env.BASE_URL}tours/tavdin-cave-2.jpg`,
+                    image: [`'/tours/tavdin-cave.jpeg`,
+                        `/tours/tavdin-cave-2.jpg`,
                     ]
                 },
             ],
@@ -37,8 +37,8 @@ const tours = [
                 },
             ],
             gallery: [
-                `${import.meta.env.BASE_URL}tours/tavdin-cave.jpeg`,
-                `${import.meta.env.BASE_URL}tours/tavdin-cave-2.jpg`,
+                `/tours/tavdin-cave.jpeg`,
+                `/tours/tavdin-cave-2.jpg`,
 
             ]
         },
@@ -47,7 +47,7 @@ const tours = [
             title: "Манжерок: гора Малая Синюха, Золотая Баба",
             shortDescription: "Уникальное путешествие по живописным местам Алтая с захватывающими панорамными видами",
             fullDescription: "Этот тур проведет вас через удивительные уголки Алтая. Вы подниметесь на гору Малую Синюху, откуда открываются завораживающие виды. Увидите легендарную Золотую Бабу – загадочное святилище алтайских народов.Опытный гид расскажет об истории и традициях этих мест, делая путешествие по-настоящему увлекательным.",
-            src: `${import.meta.env.BASE_URL}tours/manzherok-canat-2.png`,
+            src: `/tours/manzherok-canat-2.png`,
             price: "не указана",
             duration: "Нефиксированный",
             transfer: "Toyota Camry",
@@ -57,15 +57,15 @@ const tours = [
                 {
                     name: "Манжерок гора Малая Синюха",
                     description: "Живописное место с канатной дорогой и панорамными видами.",
-                    image: [`${import.meta.env.BASE_URL}tours/manzherok-canat-1.png`,
-                        `${import.meta.env.BASE_URL}tours/manzherok-canat-2.png`,
+                    image: [`/tours/manzherok-canat-1.png`,
+                        `/tours/manzherok-canat-2.png`,
                     ]
                 },
                 {
                     name: "Золотая баба",
                     description: "небольшая фигурка в духе тех, что изготавливали древнейшие народы как символы плодородия и здоровья",
                     image: [
-                        `${import.meta.env.BASE_URL}tours/golden-baba.jpg`,
+                        `/tours/golden-baba.jpg`,
                     ]
                 }
                 ,
@@ -94,9 +94,9 @@ const tours = [
             ],
             gallery:
                 [
-                    `${import.meta.env.BASE_URL}tours/manzherok-canat-1.png`,
-                    `${import.meta.env.BASE_URL}tours/manzherok-canat-2.png`,
-                    `${import.meta.env.BASE_URL}tours/golden-baba.jpg`,
+                    `/tours/manzherok-canat-1.png`,
+                    `/tours/manzherok-canat-2.png`,
+                    `/tours/golden-baba.jpg`,
                 ]
         },
 
