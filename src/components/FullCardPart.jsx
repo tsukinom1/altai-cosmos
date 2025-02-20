@@ -10,6 +10,7 @@ const FullCardPart = ({place}) => {
                 <div className="sm:flex w-full gap-3 md:w-2/3">
                     {place.image.map((img, index) => (
                         <img
+                            key={index}
                             src={img}
                             alt={place.name}
                             className="hover:scale-105 transition-transform duration-500  w-full my-3 sm:w-1/2 h-80  lg:h-60 object-cover rounded-lg cursor-pointer"
