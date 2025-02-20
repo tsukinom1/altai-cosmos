@@ -4,7 +4,6 @@ import Home from "./pages/Home.jsx";
 import FullCard from "./pages/FullCard.jsx"
 import tours from "./utils/tours.js";
 import Tours from "./pages/Tours.jsx";
-import PlaceCard from "./pages/PlaceCard.jsx";
 import Gallery from "./pages/Gallery.jsx";
 import {useEffect} from "react";
 import AOS from "aos";
@@ -24,7 +23,6 @@ function App() {
                 <Route path="/gallery" element={<Gallery/>}/>
                 <Route path="/tours" element={<Tours/>}/>
                 <Route path="/tour/id/:id" element={<FullCard tours={tours}/>}/>
-                <Route path="/tour/name/:urlName" element={<PlaceCard/>}/>
             </Routes>
         </BrowserRouter>
     )

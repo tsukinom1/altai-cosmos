@@ -4,12 +4,12 @@ const tours = [
             title: "Тавдинские пещеры, Манжерок",
             shortDescription: "Увлекательное путешествие по красивейшим местам Алтая.",
             fullDescription: "Этот тур познакомит вас с уникальными природными и историческими достопримечательностями Алтая. Вы увидите величественные Тавдинские пещеры, насладитесь потрясающим видом с канатной дороги Манжерока. Опытный гид расскажет вам удивительные истории и легенды этих мест.",
-            src: `${import.meta.env.BASE_URL}photos/img-4.jpg`,
+            src: `${import.meta.env.BASE_URL}images/img-4.jpg`,
             price: "не указана",
             duration: "Нефиксированный",
             transfer: "Toyota Camry",
             group: 'yes',
-            equepments: 'yes',
+            equipments: 'yes',
             places: [
                 {
                     name: "Тавдинские пещеры",
@@ -20,8 +20,8 @@ const tours = [
                 {
                     name: "Манжерок",
                     description: "Канатная дорога с потрясающим видом на Алтай.",
-                    image: `${import.meta.env.BASE_URL}tours/manzherok-canat-2.jpg`,
-                    image2: `${import.meta.env.BASE_URL}tours/manzherok-2.jpg`,
+                    image: `${import.meta.env.BASE_URL}tours/manzherok-canat-1.png`,
+                    image2: `${import.meta.env.BASE_URL}tours/manzherok-canat-2.png`,
                 },
 
             ],
@@ -61,18 +61,18 @@ const tours = [
             title: "Манжерок: гора Малая Синюха, Золотая Баба, Зубровый питомник",
             shortDescription: "Уникальное путешествие по живописным местам Алтая с захватывающими панорамными видами и встречей с зубрами.",
             fullDescription: "Этот тур проведет вас через удивительные уголки Алтая. Вы подниметесь на гору Малую Синюху, откуда открываются завораживающие виды. Увидите легендарную Золотую Бабу – загадочное святилище алтайских народов. А в Зубровом питомнике сможете понаблюдать за редкими животными в естественной среде обитания. Опытный гид расскажет об истории и традициях этих мест, делая путешествие по-настоящему увлекательным.",
-            src: `${import.meta.env.BASE_URL}tours/tour-2.webp`,
+            src: `${import.meta.env.BASE_URL}tours/manzherok-canat-2.png`,
             price: "не указана",
             duration: "Нефиксированный",
             transfer: "Toyota Camry",
             group: 'yes',
-            equepments: 'yes',
+            equipments: 'yes',
             places: [
                 {
                     name: "Манжерок гора Малая Синюха",
                     description: "Живописное место с канатной дорогой и панорамными видами.",
-                    image: `${import.meta.env.BASE_URL}tours/manzherok-canat.jpg`,
-                    image2: `${import.meta.env.BASE_URL}tours/manzherok-canat-2.jpg`,
+                    image: `${import.meta.env.BASE_URL}tours/manzherok-canat-1.png`,
+                    image2: `${import.meta.env.BASE_URL}tours/manzherok-canat-2.png`,
                 },
                 {
                     name: "Золотая баба",

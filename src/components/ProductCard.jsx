@@ -83,12 +83,6 @@ const ProductCard = () => {
                                 <p className="text-md md:text-lg text-gray-500">
                                     {product.description}
                                 </p>
-                                <div className="bg-orange-100 border-l-4 border-orange-500 text-orange-700 p-4 my-3"
-                                     role="alert">
-                                    <p className="font-bold">Хотите приобрести?</p>
-                                    <p>Свяжитесь с нами удобным для вас способом.</p>
-                                </div>
-
                                 <div className="mt-2 flex flex-col md:flex-row justify-start gap-x-10 md:items-center">
                                     <span
                                         className="text-md md:text-lg font-bold text-blue-600 my-2">Цена: {product.price}</span>

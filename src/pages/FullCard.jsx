@@ -31,7 +31,7 @@ const FullCard = () => {
                 <img
                     src={tour.src}
                     alt={tour.title}
-                    className="hover:scale-105 transition-transform duration-500  w-full h-64 object-cover rounded-md mb-4"
+                    className="hover:scale-105 transition-transform duration-500  w-full lg:w-8/10 mx-auto h-64 lg:h-100  object-cover rounded-md mb-4"
                 />
                 <p className="text-md md:text-lg mb-4">{tour.fullDescription}</p>
 
@@ -44,12 +44,11 @@ const FullCard = () => {
                 <p className="text-sm md:text-lg mb-2"><b>Трансфер: </b>{tour.transfer !== 'no' ? tour.transfer
                     : `Невозможен`}</p>
                 <p className="text-sm md:text-lg mb-2"><b>Обеспечение
-                    снаряжением: </b>{tour.equepments === 'yes' ? `Обычно предоставляется необходимое снаряжение, включая шлемы и защитную одежду.`
-                    : `Необходимое снаряжение, включая шлемы и защитную одежду, не предоставляется`}</p><p
-                className="text-sm md:text-lg mb-2"><b>Групповые или индивидуальные
+                    снаряжением: </b>{tour.equipments === 'yes' ? `Обычно сообщается заранее.`
+                    : `Необходимое снаряжение не предоставляется.`}</p>
+                <p className="text-sm md:text-lg mb-2"><b>Групповые или индивидуальные
                 туры: </b>{tour.group === 'yes' ? `Можно выбрать экскурсию в группе или заказать индивидуальный тур.`
                 : `Индивидуальные туры: Можно выбрать экскурсию только для индивидуальный тура.`}</p>
-                <p className="text-sm md:text-lg mb-2"><b>Цена за тур: </b> {tour.price}</p>
                 <button type="button"
                         className="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm p-3 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
                     <a href="https://wa.me/+79284590455" className="flex gap-x-2"><FaWhatsapp size={20}/>Записаться на

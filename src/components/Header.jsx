@@ -41,11 +41,11 @@ export default function Header() {
                                         <line x1="6" y1="6" x2="18" y2="18"/>
                                     </svg>
                                 </div>
-                                <ul className="flex flex-col items-center justify-between min-h-[250px]">
-                                    <li className="my-8 uppercase hover:text-cyan-600">
+                                <ul className="flex flex-col items-center">
+                                    <li className="my-3 uppercase hover:text-cyan-600">
                                         <Link to="/tours">Туры</Link>
                                     </li>
-                                    <li className="my-8 uppercase hover:text-cyan-600">
+                                    <li className="my-3 uppercase hover:text-cyan-600">
                                         <Link to="/gallery">Галерея</Link>
                                     </li>
                                 </ul>

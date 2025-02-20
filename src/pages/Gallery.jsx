@@ -15,7 +15,7 @@ const Gallery = () => {
                         <li
                             data-aos="fade-down" data-aos-duration="500"
                             key={index}
-                            className="md:h-80 lg:h-100 xl:h-110 bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition"
+                            className="md:h-70 lg:h-100 xl:h-100 bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition"
                         >
                             <img src={image.src} alt={`фото ${index + 1}`}
                                  className="object-center w-full h-full mx-auto rounded-lg "

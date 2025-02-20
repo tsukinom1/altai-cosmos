@@ -55,30 +55,18 @@ const Tours = () => {
                             key={place.id}
                             className="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition"
                         >
-                            <img src={place.img} alt={place.name} className="w-full h-60 sm:h-80 md:h-60 object-cover"/>
-                            <div className="p-4">
+                            {place.img.map(item => (
+                                <img src={item} alt={place.name}
+                                      key={item} className="w-full my-5 h-60 sm:h-80 md:h-60 object-cover"/>
+                            ))}
+                            <div className="flex flex-col">
                                 <h2 className="text-xl font-semibold">{place.name}</h2>
-                                <p className="text-sm text-gray-600 mt-2">{place.short}</p>
-                                <div className="mt-4 flex justify-between items-center">
-                                    <span
-                                        className="text-sm md:text-lg font-bold text-blue-600">Цена: {place.price}</span>
-                                </div>
-
-                                <div className="mt-4 flex gap-2">
-                                    <button
-                                        className="w-1/2 text-sm md:text-md p-2 bg-blue-500 text-white rounded-md hover:bg-blue-700 transition cursor-pointer"
-                                        onClick={() => navigate(`/tour/name/${encodeURIComponent(place.urlName)}`)}
-                                    >
-                                        Подробнее
-                                    </button>
-
-                                    <button
-                                        className={`w-1/2 text-sm md:text-md p-2 rounded-md transition ${selectedPlaces.includes(place.name) ? "bg-green-500 text-white hover:bg-green-700" : "bg-gray-300 text-black hover:bg-gray-400"}`}
-                                        onClick={() => togglePlaceSelection(place.name)}
-                                    >
-                                        {selectedPlaces.includes(place.name) ? "Выбрано" : "Выбрать"}
-                                    </button>
-                                </div>
+                                <button
+                                    className={`w-1/2 text-sm md:text-md p-2 rounded-md transition ${selectedPlaces.includes(place.name) ? "bg-green-500 text-white hover:bg-green-700" : "bg-red-200 text-black hover:bg-gray-400"}`}
+                                    onClick={() => togglePlaceSelection(place.name)}
+                                >
+                                    {selectedPlaces.includes(place.name) ? "Выбрано" : "Выбрать"}
+                                </button>
                             </div>
                         </li>
                     ))}
@@ -86,7 +74,9 @@ const Tours = () => {
 
                 {/* Форма отправки */}
                 <div className="md:w-1/2 lg:w-2/5 mx-auto mt-8 p-4 border border-gray-300 rounded-lg">
-                    <h2 className="text-xl font-semibold mb-3 text-center">Заполните данные для связи</h2>
+                    <h2 className="text-xl font-semibold text-center">Заполните данные для связи</h2>
+                    <p className="text-md text-gray-500 mb-2 text-center">прежде чем отправить, выберите места, которые хотите посетить</p>
+
                     <input
                         type="text"
                         placeholder="Ваше имя"
@@ -110,9 +100,6 @@ const Tours = () => {
                 </div>
 
                 <div className="mt-10 text-center">
-                    <p className="text-md md:w-2/3 mx-auto md:text-lg">Не можете выбрать? Свяжитесь с нами, и мы
-                        подберем для вас
-                        идеальный маршрут!</p>
                     <FeedbackCard/>
                 </div>
             </div>
